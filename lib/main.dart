@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_app_clone/core/configs/theme/app_theme.dart';
+import 'package:spotify_app_clone/presentation/splash/pages/splash.dart';
 
 void main() {
-  runApp(const SpotifyClone());
+  runApp(const SpotifyCloneApp());
 }
 
-class SpotifyClone extends StatelessWidget {
-  const SpotifyClone({super.key});
+class SpotifyCloneApp extends StatelessWidget {
+  const SpotifyCloneApp({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Container(),
+      theme: AppTheme.ligthTheme,
+      home: const SplashPage(),
     );
   }
 }
