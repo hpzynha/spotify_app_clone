@@ -70,7 +70,8 @@ class ChooseModePage extends StatelessWidget {
                                 height: 80,
                                 width: 80,
                                 decoration: BoxDecoration(
-                                    color: Color(0xff30393C).withOpacity(0.5),
+                                    color: const Color(0xff30393C)
+                                        .withOpacity(0.5),
                                     shape: BoxShape.circle),
                                 child: SvgPicture.asset(
                                   AppVectors.moon,
@@ -108,7 +109,8 @@ class ChooseModePage extends StatelessWidget {
                                 height: 80,
                                 width: 80,
                                 decoration: BoxDecoration(
-                                    color: Color(0xff30393C).withOpacity(0.5),
+                                    color: const Color(0xff30393C)
+                                        .withOpacity(0.5),
                                     shape: BoxShape.circle),
                                 child: SvgPicture.asset(
                                   AppVectors.sun,
@@ -139,7 +141,7 @@ class ChooseModePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              SignupOrSignininPage(),
+                              const SignupOrSignininPage(),
                         ),
                       );
                     },
