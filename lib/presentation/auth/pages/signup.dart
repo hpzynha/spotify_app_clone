@@ -8,7 +8,6 @@ import 'package:spotify_app_clone/presentation/auth/pages/signin.dart';
 
 class SignupPage extends StatelessWidget {
   const SignupPage({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
