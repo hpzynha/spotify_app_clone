@@ -7,7 +7,7 @@ import 'package:spotify_app_clone/core/configs/assets/app_vectors.dart';
 import 'package:spotify_app_clone/data/models/auth/create_user_req.dart';
 import 'package:spotify_app_clone/domain/usecases/auth/signup.dart';
 import 'package:spotify_app_clone/presentation/auth/pages/signin.dart';
-import 'package:spotify_app_clone/presentation/root/pages/root.dart';
+import 'package:spotify_app_clone/presentation/home/pages/home.dart';
 
 import '../../../service_locator.dart';
 
@@ -86,7 +86,7 @@ class SignupPage extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (BuildContext context) =>
-                                    const RootPage()),
+                                    const HomePage()),
                             (root) => false);
                       },
                     );
