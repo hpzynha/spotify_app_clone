@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:spotify_app_clone/common/helpers/is_dark_mode.dart';
 import 'package:spotify_app_clone/core/configs/assets/app_images.dart';
 import 'package:spotify_app_clone/core/configs/theme/app_colors.dart';
+import 'package:spotify_app_clone/presentation/home/widgets/news_songs.dart';
 
 import '../../../common/appbar/app_bar.dart';
 import '../../../core/configs/assets/app_vectors.dart';
@@ -41,6 +42,18 @@ class _HomePageState extends State<HomePage>
           children: [
             _homeTopCard(),
             _tabs(),
+            SizedBox(
+              height: 260,
+              child: TabBarView(
+                children: [
+                  const NewsSongs(),
+                  Container(),
+                  Container(),
+                  Container()
+                ],
+                controller: _tabController,
+              ),
+            )
           ],
         ),
       ),

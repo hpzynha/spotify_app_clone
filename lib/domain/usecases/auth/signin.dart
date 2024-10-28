@@ -4,7 +4,7 @@ import 'package:spotify_app_clone/data/models/auth/signin_user_req.dart';
 import 'package:spotify_app_clone/domain/repository/auth/auth.dart';
 import 'package:spotify_app_clone/service_locator.dart';
 
-class SiginUseCase implements Usecase<Either, SigninUserReq> {
+class SiginUseCase implements UseCase<Either, SigninUserReq> {
   @override
   Future<Either> call({SigninUserReq? params}) {
     return sl<AuthRepository>().signin(params!);
