@@ -27,7 +27,7 @@ class SongFirebaseServiceImpl extends SongFirebaseService {
       }
       return Right(songs);
     } catch (e) {
-      return Left('An error occured, Please try again.');
+      return const Left('An error occured, Please try again.');
     }
   }
 }
